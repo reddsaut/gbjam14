@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpejrtebx0br7"]
+
+[ext_resource type="Texture2D" uid="uid://bidpcvcvpeyt1" path="res://imgs/green_splash.png" id="1_8y8xj"]
+
+[node name="Main" type="Node2D"]
+
+[node name="GreenSplash" type="Sprite2D" parent="."]
+position = Vector2(80, 72)
+texture = ExtResource("1_8y8xj")
