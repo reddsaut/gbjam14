@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://dtky7c5u8uppx"]
+
+[ext_resource type="Script" path="res://PlayerMouth.gd" id="1_q58vc"]
+[ext_resource type="Script" path="res://LoverMouth.gd" id="2_u2s0e"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_ckhfo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rrhfn"]
+size = Vector2(1.01186, 0.985586)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r580b"]
+size = Vector2(161, 12.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c4ln1"]
+size = Vector2(162, 16)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_f8ut0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6tbrs"]
+size = Vector2(16, 16)
+
+[node name="Main" type="Node2D"]
+
+[node name="PlayerMouth" type="CharacterBody2D" parent="."]
+position = Vector2(33, 67)
+scale = Vector2(15.9062, 16)
+motion_mode = 1
+script = ExtResource("1_q58vc")
+
+[node name="MouthLook" type="Sprite2D" parent="PlayerMouth"]
+texture = SubResource("PlaceholderTexture2D_ckhfo")
+
+[node name="MouthShape" type="CollisionShape2D" parent="PlayerMouth"]
+position = Vector2(-0.00294733, 0)
+shape = SubResource("RectangleShape2D_rrhfn")
+
+[node name="Floor" type="StaticBody2D" parent="."]
+
+[node name="FloorShape" type="CollisionShape2D" parent="Floor"]
+position = Vector2(80.5, 151.25)
+shape = SubResource("RectangleShape2D_r580b")
+
+[node name="Ceiling" type="StaticBody2D" parent="."]
+
+[node name="CeilShape" type="CollisionShape2D" parent="Ceiling"]
+position = Vector2(80, -9)
+shape = SubResource("RectangleShape2D_c4ln1")
+
+[node name="LoverMouth" type="RigidBody2D" parent="."]
+gravity_scale = 2.66454e-15
+script = ExtResource("2_u2s0e")
+
+[node name="LoverLook" type="Sprite2D" parent="LoverMouth"]
+position = Vector2(118, 67)
+scale = Vector2(15.25, 16.25)
+texture = SubResource("PlaceholderTexture2D_f8ut0")
+
+[node name="LoverShape" type="CollisionShape2D" parent="LoverMouth"]
+position = Vector2(118, 67)
+shape = SubResource("RectangleShape2D_6tbrs")

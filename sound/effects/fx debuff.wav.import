@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://db6t3r7x2kf7o"
+path="res://.godot/imported/fx debuff.wav-03c396c48c7f4ec8d78b2f01aeda848e.sample"
+
+[deps]
+
+source_file="res://sound/effects/fx debuff.wav"
+dest_files=["res://.godot/imported/fx debuff.wav-03c396c48c7f4ec8d78b2f01aeda848e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

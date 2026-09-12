@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bo5ovoola6p0n"
+path="res://.godot/imported/fx bad luck.wav-aea606acd7cd2f6a808a1d3ff18e7d32.sample"
+
+[deps]
+
+source_file="res://sound/effects/fx bad luck.wav"
+dest_files=["res://.godot/imported/fx bad luck.wav-aea606acd7cd2f6a808a1d3ff18e7d32.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
